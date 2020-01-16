@@ -24,7 +24,7 @@ elif choice == "2":
         print(work)
 
 elif choice == "3":
-    celsius_input = float(input("Temperature in C? "))
+    celsius_input = int(input("Temperature in C? "))
     Fahrenheit_return = celsius_input * 1.8 + 32
     print('%.1f F' % Fahrenheit_return)
 elif choice == "4":
