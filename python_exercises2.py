@@ -27,6 +27,22 @@ def todays_exercises(choice):
         celsius_input = float(input("Temperature in C? "))
         Fahrenheit_return = celsius_input * 1.8 + 32
         print('%.1f F' % Fahrenheit_return)
+    elif choice == "4":
+        bill_amount = float(input('Total bill amount? '))
+        
+        level_service = input('Level of service? ')
+
+        
+        
+        if level_service == "good":
+        
+        elif level_service == "fair":
+
+        elif level_service == "bad":
+
+        else:
+
+
     
 
 
