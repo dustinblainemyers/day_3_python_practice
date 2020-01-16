@@ -29,9 +29,11 @@ elif choice == "3":
     print('%.1f F' % Fahrenheit_return)
 elif choice == "4":
     bill_amount = float(input('Total bill amount? '))
+    
         
     #user selects level of service from 1 being bad , 2 being fair, and 3 being good.
     user_input = input('Level of service? (Choose 1 for bad, 2 for fair, and 3 for good) ')
+    number_to_split = int(input('Enter the number of people to split the bill between (enter 1 if it is just you) :'))
 
     if user_input == "1":
         #bad service level
@@ -48,9 +50,9 @@ elif choice == "4":
 
     else: print("You did not enter a valid selection. Please run the program again")
 
-    total = bill_amount + tip_amount
-    print('Tip amount: ${:.2f}'.format(tip_amount))
-    print('Your total is : ${:.2f}'.format(total))
+    total = (bill_amount + tip_amount) / number_to_split
+    print('Total amount per person: ${:.2f}'.format(total))
+    print('Your tip is  : ${:.2f}'.format(tip_amount))
         
 
 
